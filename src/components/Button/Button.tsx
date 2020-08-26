@@ -1,12 +1,13 @@
 import React from "react"
 import ButtonProps from "../../interfaces/ButtonProps"
 import {defaultArray, implode} from "../../helpers/ArrayHelper"
-import { getVarietyClasses } from "../../helpers/ThemeHelper"
+import { getThemeClasses } from "../../helpers/ThemeHelper"
 
 
-export const Button = ({id,text="Button", variety = 'default', classNames} : ButtonProps) => {
 
-  let theme_classes = getVarietyClasses(["default", variety]);
+export const Button = ({ id, text = "Button", variety = 'default', classNames, size = 'md' }: ButtonProps) => {
+
+  let theme_classes = getThemeClasses({varieties: ["default", variety], size: size})
 
   let merged_classes = defaultArray(theme_classes, classNames);
 

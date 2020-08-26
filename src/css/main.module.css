@@ -1,16 +1,40 @@
-
-
-.btn{
-    padding: 0.65rem 1rem;
-    margin: 0 0.2rem;
-    user-select: none;
-    cursor: pointer;
+.btn {
+  padding: 0.65rem 1rem;
+  margin: 0 0.2rem;
+  user-select: none;
+  cursor: pointer;
+  display: inline-block;
 }
 
-.btn:hover{
-    filter: brightness(110%);
+.btn:hover {
+  filter: brightness(110%);
 }
 
-.btn:active{
-    filter: brightness(125%);  
+.btn:active {
+  filter: brightness(125%);
 }
+
+/** Button sizes */
+.btn_xs,
+.btn_sm {
+  padding: 0.4rem 0.8rem;
+}
+
+.btn_xs {
+  font-size: 0.7rem;
+}
+
+.btn_sm {
+  padding: 0.4rem 0.8rem;
+}
+
+.btn_md {
+  padding: 0.65rem 1rem;
+}
+
+.btn_lg {
+  padding: 0.65rem 2rem;
+  font-size: 1.2rem;
+}
+
+/** end - Button sizes */

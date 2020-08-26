@@ -9,5 +9,12 @@ export const DefaultTheme : Theme = {
     secondary: [default_theme.btn_secondary],
     success: [default_theme.btn_success],
     danger: [default_theme.btn_danger]
+  },
+  size: {
+    xs: [style.btn_xs],
+    sm: [style.btn_sm],
+    md: [style.btn_md],
+    lg: [style.btn_lg],
   }
+
 } 
