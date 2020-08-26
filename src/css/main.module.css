@@ -1,0 +1,16 @@
+
+
+.btn{
+    padding: 0.65rem 1rem;
+    margin: 0 0.2rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    filter: brightness(110%);
+}
+
+.btn:active{
+    filter: brightness(125%);  
+}

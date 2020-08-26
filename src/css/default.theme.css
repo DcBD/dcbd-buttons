@@ -1,0 +1,39 @@
+:root {
+    --dark: #201E1F;
+    --primary: rgb(21, 114, 253);
+    --primary-darkened: rgb(6, 105, 253);
+    --success: #0cce6b;
+    --success-darkened: #379634;
+    --danger: #d64933;
+}
+
+
+/* Main style */
+.btn{
+    border: solid var(--dark) 1px;
+    background-color: white;
+}
+
+
+.btn_primary, .btn_secondary, .btn_success, .btn_danger{
+    color:white;
+    border:solid 1px;
+}
+
+.btn_primary{
+    background-color: var(--primary);
+    border-color: var(--primary-darkened);
+}
+
+.btn_secondary{
+    background-color: var(--dark);
+}
+
+.btn_success{
+    background-color: var(--success);
+    border-color: var(--success-darkened);
+}
+
+.btn_danger{
+    background-color: var(--danger);
+}

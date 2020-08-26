@@ -1,10 +1,34 @@
 import React from 'react'
 
-import { ExampleComponent } from 'dcbd-buttons'
+import { Button, ButtonPrimary, ButtonSecondary, ButtonSuccess, ButtonDanger } from 'dcbd-buttons'
+
+
 import 'dcbd-buttons/dist/index.css'
 
+
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  
+ 
+
+  return (
+    <div>
+
+      <h1>
+        Default button
+      </h1>
+      <Button text="Default button" variety="default" classNames={[]} />
+      <ButtonPrimary />
+      <ButtonSecondary />
+      <ButtonSuccess />
+      <ButtonDanger />
+      <div>
+
+      </div>
+  
+    </div>
+
+
+  )
 }
 
 export default App
