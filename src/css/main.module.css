@@ -12,7 +12,13 @@
 
 .btn:active {
   filter: brightness(125%);
+  outline-style: solid;
+  outline-color: rgba(0, 0, 0, 0.199);
+  outline-width: 2px;
+  
 }
+
+
 
 /** Button sizes */
 .btn_xs,

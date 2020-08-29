@@ -2,7 +2,7 @@
     --dark: #201E1F;
     --primary: rgb(21, 114, 253);
     --primary-darkened: rgb(6, 105, 253);
-    --success: #0cce6b;
+    --success: #0cce7d;
     --success-darkened: #379634;
     --danger: #d64933;
 }
@@ -15,6 +15,22 @@
 }
 
 
+.btn_primary:active{
+    outline-color: rgba(6, 105, 253, 0.493) !important;
+}
+
+.btn_secondary:active{
+    outline-color: rgba(0, 0, 0, 0.493) !important;
+}
+
+.btn_success:active{
+    outline-color: rgba(60, 255, 0, 0.493) !important;
+}
+
+
+
+
+
 .btn_primary, .btn_secondary, .btn_success, .btn_danger{
     color:white;
     border:solid 1px;
@@ -23,17 +39,21 @@
 .btn_primary{
     background-color: var(--primary);
     border-color: var(--primary-darkened);
+    
 }
 
 .btn_secondary{
     background-color: var(--dark);
+    border-color:var(--dark);
 }
 
 .btn_success{
     background-color: var(--success);
-    border-color: var(--success-darkened);
+    border-color: var(--success);
 }
 
 .btn_danger{
     background-color: var(--danger);
+    border-color:  var(--danger);
 }
+
