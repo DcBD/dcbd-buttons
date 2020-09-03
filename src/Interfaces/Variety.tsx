@@ -8,4 +8,5 @@ export default interface Variety {
   secondary: Array<string>
   success: Array<string>
   danger: Array<string>
+  save: Array<string>
 }

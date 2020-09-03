@@ -1,4 +1,3 @@
-
 export default interface ButtonProps{
 
   /**
@@ -36,6 +35,12 @@ export default interface ButtonProps{
    * On click button event.
    */
   onClick?: CallableFunction
+
+  children?: JSX.Element | string
+
+  disabled?: boolean
+
+  styleTag?: React.CSSProperties | any
 
 
 }

@@ -1,3 +1,6 @@
-import { Button, ButtonPrimary, ButtonSecondary, ButtonSuccess, ButtonDanger } from './Button'
+import { Button, ButtonPrimary, ButtonSecondary, ButtonSuccess, ButtonDanger,AnimatedButton } from './Button'
 
-export { Button, ButtonPrimary, ButtonSecondary, ButtonSuccess, ButtonDanger }
+
+
+export { Button, ButtonPrimary, ButtonSecondary, ButtonSuccess, ButtonDanger, AnimatedButton }
+

@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { Button, ButtonPrimary, ButtonSecondary, ButtonSuccess, ButtonDanger } from 'dcbd-buttons'
+import { Button, ButtonPrimary, ButtonSecondary, ButtonSuccess, ButtonDanger} from 'dcbd-buttons'
+
 
 
 import 'dcbd-buttons/dist/index.css'
@@ -12,6 +13,8 @@ const App = () => {
 
   return (
     <div>
+
+
 
       <div>
         <h1>
@@ -27,17 +30,18 @@ const App = () => {
         </div>
 
         <h2>
-            Different sizes
+          Different sizes
         </h2>
         <div>
           <ButtonDanger text='Button - lg' size='lg' />
           <ButtonSuccess text='Button - md' size='md' />
-          <ButtonSecondary text='Button - sm' size='sm'/>
-          <ButtonPrimary text='Button - xs' size='xs'/>
-          
-
-
+          <ButtonSecondary text='Button - sm' size='sm' />
+          <ButtonPrimary text='Button - xs' size='xs' />
         </div>
+        <h2>
+          Action buttons
+        </h2>
+ 
       </div>
 
 
