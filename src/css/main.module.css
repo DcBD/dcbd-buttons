@@ -5,6 +5,8 @@
   user-select: none;
   cursor: pointer;
   display: inline-block;
+
+  overflow:hidden;
 }
 
 .btn:hover {
@@ -53,39 +55,15 @@
 /** end - Button sizes */
 
 
-/** save button **/
+/** Ripple effect **/
 
-.progress__bar{
-  z-index: 0;
-}
-
-.progress__bar{
+.ripple{
   position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  border: rgba(110, 208, 86, 0.815);
-  background-color: rgba(110, 208, 86, 0.815);
-  display: block;
-  animation: progress 1s ease-in-out;
-
- 
-}
-
-.save_button__text{
-  z-index: 2;
-  position: relative;
+  border-radius: 50%;
+  overflow:hidden;
 }
 
 
-@keyframes progress{
-  from{
-    width:0%;
-  }to{
-    width: 100%;
-  }
-}
 
 
 
