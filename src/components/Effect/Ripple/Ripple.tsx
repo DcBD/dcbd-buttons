@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import RippleBehaviour from "./RippleProps"
 import { useSpring, animated } from "react-spring"
 import styleCss from '../../../css/main.module.css'
@@ -6,7 +6,7 @@ import styleCss from '../../../css/main.module.css'
 
 export const Ripple = (props: RippleBehaviour) => {
 
-  // const toSize : number = 200; 
+  const [display, setDisplay] = useState("block");
 
   const rippleEffect = useSpring({from:{
     opacity: 1,
@@ -22,15 +22,18 @@ export const Ripple = (props: RippleBehaviour) => {
     left: props.posX - props.startWidth / 2,
     top: props.posY - props.startWidth / 2,
     opacity: 0,
-    transform: `scale(100)`,
+    transform: `scale(15)`,
+    
+    config: { tension: 100 },
 
-    config: { tension: 25 }
+    onRest: () => setDisplay('none') // Hide element
+
     
   });
 
 
   return (
-    <animated.div  className={styleCss.ripple} style={{...rippleEffect, backgroundColor:props.color}}>
+    <animated.div className={styleCss.ripple} style={{ ...rippleEffect, backgroundColor: props.color, display: display } }>
 
     </animated.div>
   )

@@ -29,19 +29,21 @@ export const Button = ({ id, text = "Button", variety = 'default', classNames, s
 
   var handleClick = (event: MouseEvent<HTMLElement>) : void => {
 
+    if(onClick !== void 0) onClick(event);
+  }
+
+  var handleMouseDown = (event: MouseEvent<HTMLElement>): void =>{
     let color = getBackgroundColor(event);
 
     let position = getRelativePosition(event);
-    createRipple(position.x, position.y,position.w, `RGBA(${(color.R - 50)},${(color.G - 50)},${(color.B - 50)},0.5)`);
-    if(onClick !== void 0) onClick(event);
-    
+    createRipple(position.x, position.y,position.w, `RGBA(${(color.R - 50)},${(color.G - 50)},${(color.B - 50)},0.5)`);    
   }
 
 
 
 
   return (
-    <span id={id} className={implode(merged_classes)} onClick={handleClick}>
+    <span id={id} className={implode(merged_classes)} onClick={handleClick} onMouseDown={handleMouseDown}>
       {text} {children} {ripple}
     </span>
   )
