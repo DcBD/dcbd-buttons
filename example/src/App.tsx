@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Button, ButtonPrimary, ButtonSecondary, ButtonSuccess, ButtonDanger} from 'dcbd-buttons'
+import { Button, ButtonPrimary, ButtonSecondary, ButtonSuccess, ButtonDanger } from 'dcbd-buttons'
 
 
 
@@ -39,9 +39,16 @@ const App = () => {
           <ButtonPrimary text='Button - xs' size='xs' />
         </div>
         <h2>
-          Action buttons
+          Outlined buttons
         </h2>
- 
+
+        <div>
+          <Button text="Default button" type="outlined" variety="default" classNames={[]} />
+          <ButtonPrimary type="outlined"/>
+          <ButtonSecondary type="outlined"/>
+          <ButtonSuccess type="outlined"/>
+          <ButtonDanger type="outlined"/>
+        </div>
       </div>
 
 

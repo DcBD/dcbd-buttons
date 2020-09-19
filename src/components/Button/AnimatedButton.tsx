@@ -5,10 +5,10 @@ import { getThemeClasses } from "../../helpers/ThemeHelper"
 import style from '../../css/main.module.css'
 import { animated} from 'react-spring'
 
-export const AnimatedButton = ({ id, text = "Animated Button", variety = 'default', classNames, size = 'md', children,onClick,disabled,styleTag}: ButtonProps) => {
+export const AnimatedButton = ({ id, type='contained', text = "Animated Button", variety = 'default', classNames, size = 'md', children,onClick,disabled,styleTag}: ButtonProps) => {
 
 
-  let theme_classes = getThemeClasses({varieties: ["default", variety], size: size})
+  let theme_classes = getThemeClasses({varieties: ["default", variety], size: size, type: type})
 
   let merged_classes = defaultArray(theme_classes, classNames);
 

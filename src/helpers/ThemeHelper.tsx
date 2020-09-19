@@ -23,6 +23,12 @@ export const getVarietiesClasses = (varieties : Array<string>, theme : Theme) : 
 }
 
 
+export const getTypeClasses = (type : string, theme : Theme): Array<string> => {
+  
+  return theme?.type[type] || [];
+}
+
+
 /**
  * Gets classes to apply.
  * 
@@ -37,9 +43,11 @@ export const getThemeClasses = (options : ThemeOptions,theme? : Theme) =>{
 
   let varietyClasses = getVarietiesClasses(options.varieties, theme); // Button varieties
 
+  let typeClasses = getTypeClasses(options.type, theme);
+
   let sizeClasses = theme.size[options.size] || []; // Button sizes
 
-  let classes: Array<string> = [...varietyClasses, ...sizeClasses];
+  let classes: Array<string> = [...varietyClasses, ...sizeClasses, ...typeClasses];
   
   return classes
 }

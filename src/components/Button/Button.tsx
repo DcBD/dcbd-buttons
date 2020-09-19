@@ -7,12 +7,12 @@ import style from '../../css/main.module.css'
 import { Ripple } from "../Effect"
 
 
-export const Button = ({ id, text = "Button", variety = 'default', classNames, size = 'md', children,onClick,disabled}: ButtonProps) => {
+export const Button = ({ id, type = 'contained', text = "Button", variety = 'default', classNames, size = 'md', children,onClick,disabled}: ButtonProps) => {
 
   const [ripple, setRipple] = useState(<span></span>) ;
   
 
-  let theme_classes = getThemeClasses({varieties: ["default", variety], size: size})
+  let theme_classes = getThemeClasses({varieties: ["default", variety], size: size, type: type})
 
   let merged_classes = defaultArray(theme_classes, classNames);
 

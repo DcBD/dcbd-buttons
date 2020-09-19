@@ -1,14 +1,21 @@
 export default interface ButtonProps{
 
   /**
-   * Button text
+   * Button text.
    */
   text?: string
 
   /**
-   * The button variety
+   * The button variety.
    */
   variety?: string
+
+
+  /**
+   * The button type.
+   */
+  type?: string
+
 
   /**
    * The button size theme name.

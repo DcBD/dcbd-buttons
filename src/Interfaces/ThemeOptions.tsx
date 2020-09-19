@@ -12,4 +12,10 @@ export default interface ThemeOptions{
    * The button size.
    */
   size: string 
+
+
+  /**
+   * The button type
+   */
+  type: string
 }

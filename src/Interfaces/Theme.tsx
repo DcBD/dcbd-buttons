@@ -1,5 +1,6 @@
 import Variety from "./Variety";
 import Size from "./Size";
+import Type from "./Type";
 
 export default interface Theme{
   /**
@@ -11,4 +12,6 @@ export default interface Theme{
    * Styles for button sizes
    */
   size: Size
+
+  type: Type
 }
