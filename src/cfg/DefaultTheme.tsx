@@ -12,7 +12,7 @@ export const DefaultTheme: Theme = {
     /**
      * The classes for outlined buttons.
      */
-    outlined: [style.btn_outlined],
+    outlined: [style.btn_outlined, default_theme.btn_outlined],
 
     /**
      * The classes for contained button.
