@@ -49,6 +49,16 @@ const App = () => {
           <ButtonSuccess type="outlined"/>
           <ButtonDanger type="outlined"/>
         </div>
+
+        <h2>
+          Text
+        </h2>
+
+        <div>
+          <Button text="Text button" type="text" variety="default" classNames={[]} />
+
+        </div>
+
       </div>
 
 

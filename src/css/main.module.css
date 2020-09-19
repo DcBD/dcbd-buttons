@@ -72,6 +72,15 @@
 }
 
 
+.btn.btn_text:hover, .btn.btn_text:active{
+  outline: none;
+}
+
+.btn_text{
+  border:none;
+  background: none;
+  color:black;
+}
 
 
 

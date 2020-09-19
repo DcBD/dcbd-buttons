@@ -22,7 +22,7 @@ export const DefaultTheme: Theme = {
     /**
      * The classes for text button.
      */
-    text: [style.btn_text],
+    text: [style.btn_text,default_theme.btn_text],
   },
 
   /**
