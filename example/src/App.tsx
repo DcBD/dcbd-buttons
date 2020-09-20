@@ -67,7 +67,6 @@ const App = () => {
           <Button icon="&#x274C;" text='' type="text" variety="default" />
           <ButtonDanger icon="&#x274C;" text="" type="outlined"/>
           <ButtonDanger  icon="&#x274C;"  text='Button - lg' size='lg' />
-          
         </div>
 
       </div>

@@ -1,11 +1,11 @@
 
 :root {
     --dark: #201E1F;
-    --primary: rgb(21, 114, 253);
-    --primary-darkened: rgb(6, 105, 253);
-    --success: #0cce7d;
-    --success-darkened: #379634;
-    --danger: #d64933;
+    --primary: #0052fe;
+    --primary-darkened: #003de5;
+    --success: #00e241;
+    --success-darkened: #009a00;
+    --danger: #f10000;
 }
 
 

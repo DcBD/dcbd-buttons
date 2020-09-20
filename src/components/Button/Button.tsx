@@ -44,7 +44,10 @@ export const Button = ({ id, icon, type = 'contained', text = "Button", variety 
 
   return (
     <span id={id} className={implode(merged_classes)} onClick={handleClick} onMouseDown={handleMouseDown}>
-      {icon} {text} {children} {ripple}
+      {icon}
+      {text}
+      {children}
+      {ripple}
     </span>
   )
 }
