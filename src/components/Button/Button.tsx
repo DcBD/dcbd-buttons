@@ -7,7 +7,7 @@ import style from '../../css/main.module.css'
 import { Ripple } from "../Effect"
 
 
-export const Button = ({ id, type = 'contained', text = "Button", variety = 'default', classNames, size = 'md', children,onClick,disabled}: ButtonProps) => {
+export const Button = ({ id, icon, type = 'contained', text = "Button", variety = 'default', classNames, size = 'md', children,onClick,disabled}: ButtonProps) => {
 
   const [ripple, setRipple] = useState(<span></span>) ;
   
@@ -44,7 +44,7 @@ export const Button = ({ id, type = 'contained', text = "Button", variety = 'def
 
   return (
     <span id={id} className={implode(merged_classes)} onClick={handleClick} onMouseDown={handleMouseDown}>
-      {text} {children} {ripple}
+      {icon} {text} {children} {ripple}
     </span>
   )
 }

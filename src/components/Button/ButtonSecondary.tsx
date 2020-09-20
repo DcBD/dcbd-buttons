@@ -3,10 +3,10 @@ import ButtonProps from "../../interfaces/ButtonProps"
 import { Button } from './Button'
 
 
-const ButtonSecondary = ({id, type = 'contained',text="Secondary button", variety = 'secondary', classNames, size, children} : ButtonProps) => {
+const ButtonSecondary = ({id,  icon, type = 'contained',text="Secondary button", variety = 'secondary', classNames, size, children} : ButtonProps) => {
 
   return (
-    <Button id={id} text={text} variety={variety} classNames={classNames} size={size} children={children} type={type}/>
+    <Button id={id} icon={icon} text={text} variety={variety} classNames={classNames} size={size} children={children} type={type}/>
   )
 }
 

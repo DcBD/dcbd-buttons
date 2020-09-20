@@ -45,9 +45,16 @@ export default interface ButtonProps{
 
   children?: JSX.Element | string
 
+  /**
+   * The button leading icon.
+   */
+  icon?: JSX.Element | string
+ 
   disabled?: boolean
 
   styleTag?: React.CSSProperties | any
+
+
 
 
 }
