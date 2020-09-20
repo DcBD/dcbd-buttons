@@ -40,12 +40,12 @@ export const Button = ({ id, icon, type = 'contained', text = "Button", variety 
   }
 
 
-
+  var buttonTextClass = icon !== void 0 && text.length > 0 ? style.text_indent : ''
 
   return (
     <span id={id} className={implode(merged_classes)} onClick={handleClick} onMouseDown={handleMouseDown}>
       {icon}
-      {text}
+      <span className={buttonTextClass} >{text}</span>
       {children}
       {ripple}
     </span>
