@@ -4,7 +4,10 @@
   "description": "DcBD buttons",
   "author": "DcBD",
   "license": "MIT",
-  "repository": "DcBD/dcbd-buttons",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DcBD/dcbd-buttons.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
@@ -62,5 +65,15 @@
   ],
   "dependencies": {
     "react-spring": "^8.0.27"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/DcBD/dcbd-buttons/issues"
+  },
+  "homepage": "https://github.com/DcBD/dcbd-buttons#readme",
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [
+    "buttons"
+  ]
 }
