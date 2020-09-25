@@ -1,20 +1,34 @@
 
+
+/** COLORS **/
 :root {
     --dark: #201E1F;
     --primary: #0052fe;
     --primary-darkened: #003de5;
-    --success: #00e241;
+    --success: #40cf58;
     --success-darkened: #009a00;
     --danger: #f10000;
+
+
+
+
+    --default-white: #F5F5F5;
+    --default-dark-gray: #121212;
+
+
 }
 
 
 /* Main style */
 .btn{
-    border: solid var(--dark) 1px;
-    background-color: white;
+    border: solid var(--default-dark-gray) 1px;
+    background-color: var(--default-white);
 }
 
+
+.btn:active{
+    outline-color:#afa7bba8;
+}
 
 .btn_primary:active{
     outline-color: rgba(6, 105, 253, 0.493) !important;
@@ -76,4 +90,23 @@
 
 .btn.btn_success.btn_outlined:hover, .btn_success.btn_outlined:active{
     background-color: #3796341a !important;
+}
+
+
+.btn.btn_danger.btn_outlined{
+    color:var(--danger);
+}
+
+.btn.btn_outlined{
+    color:white;
+}
+
+.btn.btn_primary.btn_outlined{
+    color:var(--primary);
+
+}
+
+
+.btn.btn_success.btn_outlined{
+    color:var(--success)
 }
