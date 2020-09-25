@@ -4,7 +4,6 @@ import { Button, ButtonPrimary, ButtonSecondary, ButtonSuccess, ButtonDanger } f
 
 
 
-import 'dcbd-buttons/dist/index.css'
 
 
 const App = () => {
