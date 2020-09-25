@@ -10,20 +10,8 @@
 npm install --save dcbd-buttons
 ```
 
-## Usage
+## The Component liblary is under development.
 
-```tsx
-import React, { Component } from 'react'
-
-import MyComponent from 'dcbd-buttons'
-import 'dcbd-buttons/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
-```
 
 ## License
 
